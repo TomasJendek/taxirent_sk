@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from: 2017-10-24
+  to: 2017-10-24
+  interval: MyString
+
+two:
+  from: 2017-10-24
+  to: 2017-10-24
+  interval: MyString
