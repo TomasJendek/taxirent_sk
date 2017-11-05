@@ -11,7 +11,10 @@ default: &default
 
 development:
   <<: *default
-  database: taxirent
+  database: dfgrfmg39jsgf4
+  username: lkcftzxglgjrwt
+  port: 5432
+  password: eecaf6e0c1f5e756423d497a16248426e3e3223488bd881dfd5b9572702c2174
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
