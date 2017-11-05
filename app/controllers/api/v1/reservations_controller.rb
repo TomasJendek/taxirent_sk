@@ -19,9 +19,14 @@ class Api::V1::ReservationsController < Api::V1::BaseController
     respond_with item, json: item
   end
 
+  def check_availability
+    available = Reservation.available?(reservation_params[:from])
+    respond_with available: available.to_s
+  end
+
   private
 
   def reservation_params
-    params.require(:reservation).permit(:interval, :from, :to)
+    params.require(:reservation).permit(:interval, :from, :to, :firstname, :lastname, :email, :phone)
   end
 end

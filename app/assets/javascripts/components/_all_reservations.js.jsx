@@ -1,18 +1,19 @@
 window.Reservations = createReactClass({
 
     render() {
-        var items= this.props.reservations.map((reservation) => {
+        var reservations= this.props.reservations.map((reservation) => {
             return (
                 <div key = {reservation.id}>
                     <h3>{reservation.interval}</h3>
                     <p>{reservation.from}</p>
+                    <p>{reservation.email}</p>
                 </div>
             )
         });
 
         return(
             <div>
-                {items}
+                {reservations}
             </div>
         )
     }

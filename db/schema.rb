@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024095640) do
+ActiveRecord::Schema.define(version: 20171103062344) do
 
   create_table "reservations", force: :cascade do |t|
     t.date "from"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(version: 20171024095640) do
     t.string "interval"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.string "phone"
   end
 
 end

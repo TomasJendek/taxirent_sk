@@ -9,21 +9,17 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.\
+ *= require jquery-ui
+
  */
 html {
   height:100%;
 }
 
-body {
-  height: 100vh;
-  min-height: 100vh;
-  padding-top: 70px;
-}
-
 .wide {
   width:100%;
   height:80%;
-  min-height: 600px;
+  min-height: 800px;
   background-image:url(asset-path('bg.jpg'));
   background-size:cover;
 }
@@ -37,10 +33,9 @@ body {
   margin-top: 10%;
 }
 
-.navbar {
-  margin-bottom: 0;
-}
 
+$font-family-base: Metrophobic ,Helvetica,sans-serif;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "override";
